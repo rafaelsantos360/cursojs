@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+    <style>
+        button {
+            background-image: linear-gradient(to right, white, rgba(128, 128, 128, 0.39));
+            color: black;
+            font: bold 1em 'Arial', Helvetica, sans-seri;
+            margin: 10px;
+            width: 100px;
+            height: 50px;
+            padding:10px ;
+            border-style: ridge;    
+        }
+
+        button:hover {
+            color: blue;
+            background-color: cadetblue;
+            transition-duration: 10ms;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafios da mensagens</h1>
+    <button onclick="clicou()">botão 1</button>
+    <button onclick="clicou2()">botão 2</button>
+    <button onclick="clicou3()">botão 3</button>
+
+    <script>
+        function clicou() {
+            var nome = window.alert('Botão 01 ')
+        }
+        
+        function clicou2() {
+            var idade = window.alert('Botão 02 ')
+        }
+
+        function clicou3() {
+            var sexo = window.alert('Botão 03 ')
+        }
+
+       
+
+    </script>
+</body>
+</html>
