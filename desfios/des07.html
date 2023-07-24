@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <button onclick="calcular()">Converter</button>
+        <section id="res">
+            <p>A esta resultado da conversão...</p>
+        </section>
+    </main>
+
+    <script>
+        function calcular() {
+            let dolar = Number(prompt('Qual é a cotação do dolar: '))
+            let valor = parseFloat(prompt('Digite o valor em real: '))
+            let cota = dolar * valor
+            let cReal = valor + cota
+            valor.toFixed(2).replace(".", ",")
+            var real = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+            var cdolar = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+            var euro = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+            let res = document.querySelector('#res')
+            
+            res.innerHTML = `Valor será ${cReal}`
+            res.innerHTML += `Valor será ${dolar}`
+            res.innerHTML += `Valor será ${euro}`
+
+        }
+    </script>
+</body>
+</html>

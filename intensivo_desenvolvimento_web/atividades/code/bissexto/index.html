@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="avaliar">Verificar se o Ano atual é Bissex</button>
+    <script>
+        let botao = document.getElementById("avaliar");
+        function bisexto(){
+            let ano = new Date()
+            if(ano.getFullYear()==366){
+                alert("É Bissexto")
+            }else{
+                alert("Não é Bissexto")
+            }
+        }
+
+        botao.addEventListener("click", function(){
+            bisexto()
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="numero1">Valor 01:</label>
+        <input type="number" id="numero1"><br><br>
+        <label for="numero2">Valor 02:</label>
+        <input type="number" id="numero2"><br><br>
+        <label for="numero3">Valor 03:</label>
+        <input type="number" id="numero3"><br><br>
+        <button type="button" onclick="avaliar()">Avaliar</button>
+    </form>
+    <script>
+        function avaliar() {
+            var numero1 = document.getElementById("numero1").value;
+            var numero2 = document.getElementById("numero2").value;
+            var numero3 = document.getElementById("numero3").value;
+            if (numero1 > numero2 && numero1 > numero3){
+                alert(numero1 + " é o maior número!");
+            }else if(numero2 > numero1 && numero2 > numero3){
+                alert(numero2 + " é o maior número!");
+            }else if(numero3 > numero1 && numero3 > numero2){
+                alert(numero3 + " é o maior número!");
+            }else{
+                alert("Os números são iguais.");
+            }
+
+        }
+    </script>
+</body>
+</html>

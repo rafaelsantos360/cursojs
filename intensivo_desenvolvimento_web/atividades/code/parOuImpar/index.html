@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="valor">valor:</label>
+        <input type="number" id="valor" placeholder="Digite um valor:"><br><br>
+        <button type="button" onclick="calcular()">Avaliar!</button>
+    </form>
+    <div id="res"></div>
+    <script>
+        function calcular() {
+            let num = document.getElementById("valor").value;
+            let resultado = " ";
+            if (num % 2 == 0){
+                //Se o número é pa
+                resultado = "par";
+            }else{
+                //Caso contrário...
+                resultado ="ímpar";
+            }
+            document.getElementById("res").innerHTML = resultado
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card{
+    position: relative;
+    top: 300px; left: 0;;
+    border: 1px solid black;
+    height: 400px;
+    width: 300px;
+}
+.card img{
+    width: 300px;
+    height: 200px;
+    
+}

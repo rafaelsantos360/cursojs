@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metragem</title>
+</head>
+<body>
+    <main>
+        <button onclick="calcular()">Calcular</button>
+        <section id="res">
+            <p>Aqui vai aparecer seu resultado...</p>
+        </section>
+    </main>
+
+    <script>
+        function calcular() {
+            let valor = Number(prompt('Digite um numero em metros: '))
+            let res = document.querySelector('#res')
+            let km = valor / 1000 
+            let hm = valor / 100
+            let dam = valor / 10
+            let dm = valor * 10
+            let cm = valor * 100
+            let mm = valor * 1000
+
+            
+            res.innerHTML = `${km} quilômetros (Km)<br>`
+            res.innerHTML += `${hm} hectrômetros (Hm)<br>`
+            res.innerHTML += `${dam} decâmetros (Dam)<br>`
+            res.innerHTML += `${dm} decimetros (Dm)<br>`
+            res.innerHTML += `${cm} centimetros (Cm)<br>`
+            res.innerHTML += `${mm} melimetros (mm)<br>`
+            
+        }
+    </script>
+</body>
+</html>

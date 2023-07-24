@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="valor1">1° valor:</label>
+        <input type="text" id="valor1"><br><br>
+        <label for="valor2">2° valor:</label>
+        <input type="text" id="valor2"><br><br>
+        <button type="button" onclick="avaliar()">Avaliar</button>
+    </form>
+    <script>
+        function avaliar() {
+            let valor1 = document.querySelector("#valor1").value;
+            let valor2 = document.querySelector("#valor2").value;
+            
+            if (valor1 === valor2){
+                alert(`As duas strings ${valor1} e ${valor2} são iquais!`)
+            }else{
+                alert(`As strings ${valor1} e ${valor2} são diferentes!`)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular desconto</title>
+</head>
+<body>
+    <button onclick="calcular()">Calcular</button>
+    <section id="res">
+        <p>O seu desconto aparecerá aqui...</p>
+    </section>
+
+    <script>
+        function calcular() {
+            let item = prompt('Qual é o nome  do produto: ')
+            let porc = Number(prompt('Digite o valor á descontar: '))
+            let valor = Number(prompt('Digite o valor a discontar aqui: '))
+            valor.toFixed(2).replace('.', ',')
+            let real = valor.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+            let res = document.querySelector('#res')
+            let des = valor * porc / 100.
+            let dReal = des.toLocaleString("pt-br", {style: 'currency', currency: 'BRL'})
+            let s = valor - des
+            let sReal = s.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+
+            res.innerHTML = `O preço original era ${real}<br>` 
+            res.innerHTML += `Você acaba de ganhar ${dReal} de desconto de ${porc}%.<br>`
+            res.innerHTML += `No fim o valor a pagar${sReal}<br>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color: azure;
+}
+header{
+    background-image: linear-gradient(to right, rgb(249, 252, 109)40%, rgb(196, 196, 67)50%);
+    height: 150px;
+}
+
+.menu{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(255, 153, 0);
+    position: fixed;
+    top: 0;
+    
+    
+}
+
+li a{
+    font-family: fantasy;
+    font-size: larger;
+}
+
+p{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}

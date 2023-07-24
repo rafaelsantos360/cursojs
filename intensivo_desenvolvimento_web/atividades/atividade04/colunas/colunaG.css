@@ -1,0 +1,17 @@
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:5rem;
+}
+
+div{
+    background-color:#f2f2f2 ;
+    border: 1px solid #ddd;
+    width: 200px;
+    height: 100vh;
+}
+
+#textoColuna2{
+    width: 400px;
+}

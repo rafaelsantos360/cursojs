@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="x">Valor X:</label>
+        <input type="number" name="x" id="x">
+        <button type="button" onclick="soma()">Soma 10</button>
+    </form>
+    <div id="res"></div>
+    <script>
+        let soma = () => {
+            let x = document.getElementById("x").value;
+            document.getElementById("res").innerHTML = `${parseInt(x) + parseInt('10')}`; // Somando o
+        }
+    </script>
+</body>
+</html>

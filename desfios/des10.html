@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        A: <input type="number" name="num" id="numa">
+        B: <input type="number" name="num" id="numb">
+        C: <input type="number" name="num" id="numc">
+        <input type="button" value="avaliar" onclick="avaliar()">
+    </section>
+    <section id="res">
+        <p>O resultado aparecerá aqui...</p>
+    </section>
+
+    <script>
+        function avaliar() {
+            let na = document.querySelector("#numa")
+            let a = Number(na.value)
+            let nb = document.querySelector("#numb")
+            let b = Number(nb.value)
+            let nc = document.querySelector("#numc")
+            let c = Number(nc.value)
+            let total = (b*b) -4*a*c 
+            let res = document.querySelector("#res")
+
+            res.innerHTML = `O valor será ${total}`
+
+            if(total < 0) {
+                createAlert('Sem raiz reais')
+            }
+        }
+
+
+    </script>
+</body>
+</html>

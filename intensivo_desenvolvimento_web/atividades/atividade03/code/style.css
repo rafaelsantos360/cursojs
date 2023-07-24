@@ -1,0 +1,74 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Raleway:wght@100&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+:root{
+    --primaryColor : #ff7f8c; /*red*/
+    --secondaryColor :#9b5de5;/*purple */
+    --tertiaryColor : rgb(2, 119, 189);
+    --font01 : 'Roboto', sans-serif;  
+    --font02 : Arial, Helvetica, sans-serif;
+    --font03 : 'Pangolin', cursive;
+}
+
+body{
+    background: lightblue;
+}
+
+main{
+    background-color: aliceblue;
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border-radius: 4%;
+}
+
+#titulo{
+    color: var(--primaryColor);
+    font-family: var(--font01);
+}
+
+.filmes{
+    color: brown;
+    font-family: var(--font02);
+}
+
+.formulario{
+    color: var(--secondaryColor);
+    font-family: var(--font03);
+}
+
+table tr:nth-child(even){
+    background: gray;
+}
+
+form{
+    display: grid;
+    justify-content: space-between;
+}
+
+button{
+    margin:.5rem 0.2rem ;
+    padding:.3em 1em;
+    border-radius:.4em;
+    font-size: larger;
+    color:#6d6262;
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    bottom: -600px;
+    left: 500px;
+
+}
+a{
+    text-decoration: none;
+}

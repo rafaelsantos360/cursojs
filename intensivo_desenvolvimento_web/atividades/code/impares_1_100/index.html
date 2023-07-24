@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="valor">Digite um numero:</label>
+        <input type="number" id="valor" placeholder="1 a 100" min="1" max="100"><br><br>
+        <button type="button" onclick="impar()">Avaliar os impares</button>
+    </form>
+    <div id="res"></div>
+    <script>
+        let impar = () => {
+            const valorInput = document.getElementById("valor").value;
+            let resultado = " "
+            if(isNaN(parseInt(valorInput)) || parseInt(valorInput) <= 0){
+                alert('Valor inválido')
+                }
+            for(let i = 1; i <= valorInput; i++){
+                if(i % 2 != 0){
+                    resultado += `<p>${i}</p>`
+                }
+            }
+            document.getElementById("res").innerHTML = resultado
+        }
+    </script>
+</body>
+</html>

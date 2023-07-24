@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome"><br><br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required>
+        <button type="button" onclick="maiorIdade()">Verificar idade!</button>
+    </form>
+    <script>
+        function maiorIdade(){
+            let nome = document.getElementById("nome").value;
+            let idade = parseFloat(document.getElementById("idade").value);
+            if(idade >= 18){
+                document.write(`${nome} com Idade ${idade} é MAIOR DE IDADE!`);
+            }else{
+                document.write(`${nome} com média ${idade} é MENOR DE IDADE!`);
+            };
+        }
+    </script>
+</body>
+</html>

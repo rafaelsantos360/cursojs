@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <!--Nome-->
+        <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Insira seu nome"><br>
+        <!--E-mail-->
+        <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Insira seu e-mail"><br>
+        <!--Senha-->
+        <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" placeholder="Insira sua senha"><br>
+        <!--Sexo-->
+        <label for="Nascimento">Data de nascimento</label><br>
+            <input type="date" name="nasc" id="nasc">
+        <p><strong>Sexo</strong></p>
+            <input type="checkbox" name="feminino" id="feminino">
+        <label for="feminino">Feminino:</label><br>
+            <input type="checkbox" name="sexo" value="masculino" checked>
+        <label for="">Masculino: </label><br>
+        <button type="submit">Enviar</button>
+    </form><br><br>
+
+    <!--New letter-->
+    <form action="">
+        <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email"><br>
+        <label for="discus">Assunto</label><br>
+            <textarea name="discus" id="discus" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!--Formulário de avaliação-->
+    <form action="">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br>
+        <label for="avaliação">Avaliar:</label><br>
+        <select name="avaliacao" id="avaliacao">
+            <option value="bom">Bom</option>
+            <option value="neutro">Neutro</option>
+            <option value="ruim">Ruim</option>
+            <option value="pessimo">Péssimo</option>
+        </select><br>
+        <input type="submit" value="enviar">
+    </form><br><br>
+    <!--pedido de pizza-->
+    <form action="">
+        <label for="pizza">Tipo da pizza</label><br>
+        <select name="tipo_pizza" id="tipo_pizza">
+            <option value="mussarela">Mussarela</option>
+            <option value="calabresa">Calabresa</option>
+            <option value="portuguesa">Portuguesa</option>
+            <option value="frango">Frango</option>
+        </select><br>
+        <label for="tamanho">Tamanho da pizza</label><br>
+        <select name="tam_pizza" id="tam_pizza">
+            <option value="pequena">Pequena (até 8 unidades)</option>
+            <option value="media">Media (entre 9 e 24 unidades)</option>
+            <option value="grande">Grande (mais que 25 unidades)</option>
+        </select><br>
+        <input type="submit" value="Enviar pedido">
+    </form><br><br>
+    
+    <!--formilário login-->
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>

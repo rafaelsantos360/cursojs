@@ -17,17 +17,16 @@
 <body>
     <h1>Boas vindas</h1>
     <button onclick="inicio()">Boas vindas</button>
-    <fuction id="resultado">
-        <p>Aqui vai ficar o resultado...</p>
-    </fuction>
+    <div>
+        <p id="resultado">Aqui vai ficar o resultado...</p>
+    </div>
 
     <script>
         function inicio() {
-            var nome = window.prompt('Qual é o seu nome')
-            var res = window.document.getElementById('resultado')
-            res.innerHTML =  `Olá, ${nome}é um prazer em conhecelo!;`
-
-        }
+            var name = window.prompt(' Qual é o seu nome?')
+            let idade = window.prompt(`Olá, ${name}! Quantos anos voçê tem?`)
+            let res = alert(`Acabei de conhecer ${name}, que tem ${idade} anos!`)
+        }        
     </script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário resposivel</title>
+</head>
+<body>
+    <main>
+        <form>
+            <!--Nome-->
+            <label for="nome"><strong>Nome:</strong></label><br/>
+            <input type="text" id="nome" name="nome" class="nome" placeholder="Digite seu nome" required><br/><br/>
+            <!--E-mail-->
+            <label for="email"><strong>E-mail:</strong></label>
+            <input type="email" id="email" name="email" class="email" placeholder="Digite seu e-mail" required><br/><br/>
+            <!--Senha-->
+            <label for="senha"><strong>Senha:</strong></label>
+            <input type="password" name="senha" id="senha" minlength="1" required><br><br>
+            <!--Numero-->
+            <label for="quantidade"><strong>Quantidade:</strong></label>
+            <input type="number" name="quantidade" id="quantidade" min="1" max="50" step="0.5"><br><br>
+            <!--Data-->
+            <label for="nascimento"><strong>Nascimento:</strong></label>
+            <input type="date" name="nascimento" id="nascimento" required><br/><br>
+            <!--Arquivo-->
+            <label for="arquivo"><strong>Arquivo:</strong></label>
+            <input type="file" name="arquivo" id="arquivo" accept=".pdf, .doc, .docx" required><br><br>
+            <strong><!--Intervalo--></strong>
+            <label for="intervalo"><strong>Intervalo de tempo:</strong></label>
+            <input type="range" name="intervalo" id="intervalo" min="1" max="100"><br><br>
+            <!--Radious-->
+            <p><strong>Sexo:</strong></p>
+            <input type="radio" id="masculino" name="masculino" value="masculino" checked>
+            <label for="masculino"><strong>Masculino:</strong></label>
+            &nbsp;&nbsp;
+            <input type="radio" id="feminino" name="feminino">
+            <label for="feminino"><strong>Feminino:</strong></label><br><br>
+        <!--check-box-->
+            <input type="checkbox" name="termo" id="termo" value="Aceito">
+            <label for="termo"><strong>Aceito os termos de serviço:</strong></label><br>
+            <!--Seleção de escolha-->
+            <label for="paises"><strong>Paises:</strong></label>
+            <select name="paises" id="paises">
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Agentina">Agentina</option>
+            </select>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

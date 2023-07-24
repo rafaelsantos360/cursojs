@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header{
+    height: auto;
+}
+
+nav{
+    padding: 20px;
+    background-color:#3498db ;
+}
+.menu, li a{
+    color: azure;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@media(max-width: 750px){
+    nav{
+        position: fixed;
+        height: 100vh;
+        left: 0%;
+        top: 0px;
+        width: 20%;
+        transition:.5s ease all;
+
+    }
+    .menu{
+        display: grid;
+        gap: 20px;
+    }
+}

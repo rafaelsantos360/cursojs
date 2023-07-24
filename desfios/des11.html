@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano bissexto</title>
+</head>
+<body>
+    <main>
+        Coloque o ano: <input type="number" name="biss" id="biss">
+        <input type="button" value="Avaliar" onclick="avaliar()">
+
+        <div id="res">Resultado aparecerá aqui:</div>
+    </main>
+
+    <script>
+        function avaliar() {
+            let biss = document.querySelector('#biss')
+            let res = document.querySelector('#res')
+            
+            
+            let data = new Date()
+            let ano = data.getDay()
+
+            if(ano >= 366) {
+                res.innerHTML += "Ano bissexto!"
+                res.innerHTML += ano
+            } 
+            else {
+                res.innerHTML += "Ano não é bissexto!"
+            }
+        }
+    </script>
+</body>
+</html>

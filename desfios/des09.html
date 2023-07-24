@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajustar salário</title>
+</head>
+<body>
+    <main>
+        <button onclick="reajustar()">Reajustar</button>
+        <section id="res">
+            <p>Aqui aparecerá o seu reajuste!</p>
+        </section>
+    </main>
+
+    <script>
+        function reajustar() {
+            let nome = prompt('Qual é o seu nome: ')
+            let porc = Number(prompt('Digite um numero: '))
+            let sal = Number(prompt('Digite o seu salário: '))
+            let rSal = sal.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+            let ad = sal * porc / 100
+            let adReal = ad.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+            let res = document.querySelector('#res')
+            let total = sal + ad
+            let tReal = total.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+         
+            res.innerHTML = `Salári atual é ${rSal}<br>`
+            res.innerHTML += `O valor adicinado será ${adReal}<br>`
+            res.innerHTML += `Total de reajuste é ${tReal}`
+            
+        }
+    </script>
+</body>
+</html>

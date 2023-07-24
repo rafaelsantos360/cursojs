@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convrsor de temperadura</title>
+</head>
+<body>
+    <main>
+        <button onclick="converter()">Converter</button>
+        <section id="res">
+            <p>Resultado da conversão...</p>
+        </section>
+
+        <script>
+            function converter() {
+                let valor = Number(prompt('Digite o valor: '))
+                let fah = (9*valor/5)+32
+                let kel = valor + 273
+                let res = document.querySelector('#res')
+
+                res.innerHTML = `${fah}°F (Fahrenheit) <br>`
+                res.innerHTML += `${kel}`
+            }
+        </script>
+    </main>
+</body>
+</html>

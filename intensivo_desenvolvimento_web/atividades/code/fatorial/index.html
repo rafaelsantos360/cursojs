@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="valor">Digite valor:</label>
+        <input type="number" id="valor"><br><br>
+        <button type="button" onclick="calcular()">Calcular fatorial</button>
+    </form>
+    <div id="res"></div>
+    <script>
+        function calcular() {
+            let num = document.getElementById("valor");
+            let resultado = document.querySelector("#res");
+            let fatorial = 0
+            resultado = " "
+            for(let i = num; i >= 1; i--){
+                fatorial += (num)*i
+            }
+            
+            alert(fatorial)
+        }
+    </script>
+</body>
+</html>
