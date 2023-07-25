@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Form>
+        <label for="altura">Altura:</label>
+        <input type="number" name="altura" id="altura"><br><br>
+        <label for="peso">Peso:</label>
+        <input type="text" name="peso" id="peso"><br><br>
+        <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+    </Form>
+    <div id="res">
+        
+    </div>
+    <script>
+        function calcularIMC() {
+            let altura = parseFloat(document.getElementById("altura").value);
+            let peso = parseFloat(document.getElementById("peso").value);
+            let imc = peso / (altura * altura);
+            if (isNaN(altura) || isNaN(peso)){
+                alert('Informe valores válidos!');
+            }
+            if(imc < 18){
+                alert(`Seu IMC é ${imc}, você está abaixo donormal`)
+            }else if(imc < 25){
+                alert(`Seu IMC é ${imc}, Você esta com o peso normal`)
+            }else if(imc < 30){
+                alert(`Seu IMC é ${imc}, Você esta acima do peso`)
+            }else if(imc < 40){
+                alert(`Seu IMC é ${imc}, Você esta obeso`)
+            }else{
+                alert(`Seu IMC é ${imc}, Você esta em Obesidade morbida`)
+            }
+        }
+    </script>
+</body>
+</html>
